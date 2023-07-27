@@ -1,0 +1,247 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+* {
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 95px;
+    position: fixed;
+    margin: auto;
+    z-index: 1000;
+    flex-direction: column;
+    padding: 0px!important;
+}
+
+.header-80 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    position: absolute;
+    right: 0px;
+    left: 0px;
+    z-index: 1000;
+    height: 95px;
+}
+
+.header-80 aside {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.right-header-aside {
+    justify-content: flex-end;
+}
+
+.responsive-article {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    height: 100px;
+    z-index: 1000;
+    position: absolute;
+    top: 70px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+.responsive-article ul {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    padding: 0px;
+}
+
+.responsive-article ul li {
+    width: 100%;
+    height: 25%;
+    text-decoration: none;
+    border-bottom: 2px solid #CC3333;
+    margin: 0px;
+}
+
+.active {
+    color: #CC3333!important;
+}
+
+.header-container img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.header-container aside {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+.header-container ul {
+    display: flex;
+    align-items: center;
+    margin: 0px;
+}
+
+.header-container li {
+    margin: 10px;
+    list-style: none;
+    font-size: 18px;
+}
+
+.header-container a {
+    text-decoration: none;
+    color: #000;
+    transition: 0.3s;
+    font-weight: 600;
+}
+
+.header-container a:hover {
+    font-size: 18.5px;
+}
+
+.header-container h1 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #000;
+}
+
+.header-container span {
+    color: #CC3333;
+}
+
+.scrolled {
+    background-color: rgba(7, 0, 7, 0.842);
+    border-bottom: 2px solid #CC3333;
+}
+
+.banner {
+    width: 100%;
+    height: 500px;
+    position: fixed;
+}
+
+header section:last-child {
+    width: 100%;
+    position: relative;
+}
+
+@media only screen and (max-width: 768px) {
+    .displayyes {
+        display: none!important;
+    }
+    .burger-btn {
+        display: inline!important;
+        margin: 0px!important;
+        background: none;
+        border: none;
+    }
+    .header-container {
+        width: 100%;
+        margin: auto;
+    }
+    .right-header-aside {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+    }
+    #headerOfScroll {
+        font-size: 20px;
+    }
+}
+
+.dropdown:hover {
+    font-size: 18.5px
+}
+
+
+/* The container <div> - needed to position the dropdown content */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+/* Dropdown Content (Hidden by Default) */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+/* Links inside the dropdown */
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+/* Change color of dropdown links on hover */
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+
+/* Show the dropdown menu on hover */
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+
+.dropdown:hover .dropbtn {
+    background: none;
+}
+
+.dropbtn {
+    background: none;
+    color: #000;
+    padding: 16px;
+    font-size: 18px;
+    border: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}

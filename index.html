@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeenShop</title>
+    <title>Teens</title>
+    <link href="https://res.cloudinary.com/teenshop/image/upload/v1612610315/output-onlinepngtools_5_acpuni.png" rel="shortcut icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+</head>
+
+<body class="body">
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+                xfbml: true,
+                version: 'v8.0'
+            });
+        };
+
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <!-- Your Chat Plugin code -->
+    <div class="fb-customerchat" attribution=setup_tool page_id="789036061259340">
+    </div>
+    <header>
+        <section class="header-container">
+            <article class="header-80">
+                <aside>
+                    <h1 id="headerOfScroll"><span style="padding-right:12px; color:#CC3333">Clothes</span>for teens</h1>
+                </aside>
+                <aside class="right-header-aside">
+                    <ul class="header-ul">
+                        <li class="displayyes">
+                            <a href="./index.html" class="active scrollOfHeader">Home</a>
+                        </li>
+                        <li class="displayyes">
+                            <a class="scrollOfHeader" href="contact.html">Contacts</a>
+                        </li>
+                        <li class="displayyes">
+                            <div class="dropdown">
+                                <button class="dropbtn">About us &#11167;</button>
+                                <div class="dropdown-content">
+                                    <a href="./terms.html">Terms and Conditions</a>
+                                    <a href="./delivery.html">Delivery and Terms</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="displaynone" style="display: none;">
+                            <div class="dropdown">
+                                <div class="dropdown-content">
+                                    <a href="./terms.html">Terms and Conditions</a>
+                                    <a href="delivery.html">Delivery and Terms</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <button style="display: none;height: 40px; width: auto; font-size: 25px; color: #fff;" class="burger-btn">&#9776;</button>
+                        </li>
+                    </ul>
+                </aside>
+            </article>
+            <article class="responsive-article">
+                <ul class="resonsive-ul">
+                    <li class="responsive-li"><a class="active" href="./index.html">Home</a></li>
+                    <li class="responsive-li"><a class="responsive-a" href="./contact.html">Contacts</a></li>
+                    <li class="responsive-li"><a class="responsive-a" href="./terms.html">Terms and Conditions</a></li>
+                    <li class="responsive-li"><a class="responsive-a" href="./delivery.html">Delivery and Terms</a></li>
+                </ul>
+            </article>
+        </section>
+        <section class="fixed-banner">
+            <article class="banner">
+                <img class="vid" src="https://res.cloudinary.com/teenshop/image/upload/v1612610316/slider-1_owhang.jpg" alt="">
+            </article>
+            <article class="middle-banner">
+                <h1 style="color: #CC3333">Teenshop.ge</h1>
+            </article>
+        </section>
+    </header>
+    <main class="main">
+        <section class="slider-section">
+            <article class="text-article">
+                <h1>About us</h1>
+                <hr>
+            </article>
+            <article>
+                <aside>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem provident aliquid in voluptatibus quaerat hic. Beatae sequi, ipsum quaerat quis porro omnis, numquam odit ea nihil architecto at deleniti officiis.</p>
+                </aside>
+                <aside>
+                    <img src="https://res.cloudinary.com/teenshop/image/upload/v1612610315/shopimage_ae481o.png" alt="">
+                </aside>
+            </article>
+
+        </section>
+
+        <section class="products-section" style="background: url(./source/repeat-white-background-waves.jpg);">
+            <article class="text-article">
+                <h1>Products</h1>
+                <hr>
+            </article>
+            <article class="search-article">
+                <div class="form-group">
+                    <!-- <label for="">სახელი</label> -->
+                    <select name="name" id="name" style="height: 40px; width:150px; color: #000000; border-radius: 4px;">
+                        <option value="pants">შარვალი</option>
+                        <option value="hoodie">ჰუდი</option>
+                        <option value="shirt">მაისური</option>
+                        <option value="skirt">ქვედაბოლო</option>
+                        <option value="dress">კაბა</option>
+                        <option value="shoe">ფეხსაცმელი</option>
+                        <option value="combinizone">კომბინიზონი</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <!-- <label for="">ფასი</label> -->
+                    <select name="price" id="price" style="height: 40px; width:100px; color: #000000; border-radius: 4px;">
+                        <option value="0-100₾">0-100₾</option>
+                        <option value="100-200₾">100-200₾</option>
+                        <option value="200-300₾">200-300₾</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-danger">Search</button>
+                </div>
+            </article>
+            <article class="products" style="color:#cc3333!important;">
+
+            </article>
+        </section>
+        <section class="map-section">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2977.828333349405!2d44.766734901517424!3d41.72422303499041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x404473f84a8f8059%3A0x1aff506eb18d6ff7!2sAtelier%20Sofi!5e0!3m2!1ska!2sge!4v1589049936459!5m2!1ska!2sge"
+                width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </section>
+        <section class="footer">
+            <p style="margin: 0px;">NKTP Group Copyright © 2020</p>
+        </section>
+
+    </main>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+
+
+</body>
+
+</html>
